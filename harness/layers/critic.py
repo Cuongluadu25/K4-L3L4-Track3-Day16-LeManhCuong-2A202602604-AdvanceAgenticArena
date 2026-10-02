@@ -115,7 +115,7 @@ class Critic(Middleware):
                         {"text": left, "doc_id": left_doc.doc_id},
                         {"text": right, "doc_id": right_doc.doc_id},
                     ]
-            pos = cut + len(glue)
+            pos = cut + 1
 
     def after_agent(self, ctx, report):
         claims = report.get("claims")
